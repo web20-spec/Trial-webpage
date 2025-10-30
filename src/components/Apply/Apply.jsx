@@ -11,7 +11,7 @@ function Apply() {
       <img className='h-18' src="https://www.accessed.pk/_next/image?url=%2FUniversities%2FUOL.png&w=640&q=75" alt="logo" />
       </div>
 
-      <div className='bg-indigo-50 w-95 h-110 absolute top-30 right-10 pt-10 pl-10 pr-5 '>
+      <div className='bg-indigo-50 w-100 h-110 absolute top-30 right-10 rounded pt-10 pl-10 pr-5 '>
 
         <div className='flex mb-4'>
         <p className='text-4xl text-slate-500 font-bold mt-5'>UOL</p>
@@ -19,14 +19,13 @@ function Apply() {
         <p className='text-indigo-900 text-sm pr-50 mt-2'>Online Admission System</p>
         </div>
 
-        {/* <div className='flex-row'> */}
           <p className='text-gray-500 font-semibold'>Login</p>
-        {/* </div> */}
 
         <div className='mt-4'>
-          <input className='border-slate-300 border rounded-2xl pl-2 pt-0.5 pb-0.5 mb-1.5 w-full ' type="text" placeholder='Enter your email here' ></input>
+          <input
+          className='border-slate-300 border rounded-2xl pl-3 pt-0.5 pb-0.5 mb-1.5 w-full ' type="text" placeholder='Enter your email here' ></input>
 
-          <input className='border-gray-300 border rounded-2xl pl-2 pt-0.5 pb-0.5 mt-1.5 w-full ' type="text" placeholder='Enter your password here' ></input>
+          <input className='border-gray-300 border rounded-2xl pl-3 pt-0.5 pb-0.5 mt-1.5 w-full ' type="text" placeholder='Enter your password here' ></input>
         </div>
 
         <div className='text-blue-600 font-semibold text-lg flex flex-row-reverse mt-2'>
