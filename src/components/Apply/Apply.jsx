@@ -6,10 +6,10 @@ function Apply() {
     <div className="bg-[url('https://admissions.uol.edu.pk/static/media/uol-admissions-portal.19a2c5a892ead43a32dc.webp')] min-h-screen min-w-full bg-no-repeat bg-cover bg-fixed relative"
     >
 
-      <div className='pt-15 pl-12'>
+      {/* <div className='pt-15 pl-12'>
 
       <img className='h-18' src="https://www.accessed.pk/_next/image?url=%2FUniversities%2FUOL.png&w=640&q=75" alt="logo" />
-      </div>
+      </div> */}
 
       <div className='bg-indigo-50 w-100 h-110 absolute top-30 right-10 rounded pt-10 pl-10 pr-5 '>
 
