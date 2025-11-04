@@ -7,6 +7,7 @@ import Layout from './Layout.jsx'
 import About from './components/About/About.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Academics from './components/Academics/Academics.jsx'
+import Admissions from './components/Admissions/Admissions.jsx'
 
 
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
     <Route path='apply' element={<Apply />} />
     <Route path='about' element={<About />} />
     <Route path='academics' element={<Academics />} />
+    <Route path='admissions' element={<Admissions />} />
     </Route>
   )
 )

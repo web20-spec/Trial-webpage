@@ -34,7 +34,10 @@ return (
         ><li className='hover:text-orange-500 duration-500'>Academics </li></NavLink>
         <li className='hover:text-orange-500 duration-500'>International </li>
         <li className='hover:text-orange-500 duration-500'>Campus </li>
-        <li className='hover:text-orange-500 duration-500'>Admissions </li>
+        <NavLink to='/admissions'
+        className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
+        ><li className='hover:text-orange-500 duration-500'>Admissions</li></NavLink>
+
         <NavLink to='/about'
         className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
         ><li>About </li></NavLink>
