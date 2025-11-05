@@ -4,9 +4,9 @@ function About() {
 return (
     
     <>
-    <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/08/2U7A5019-scaled-1.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover bg-black/100 relative">
+    <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/08/2U7A5019-scaled-1.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover bg-bottom bg-black/100 relative">
 
-        <h2 className='text-white text-8xl absolute bottom-1 left-8 font-serif'>About</h2>
+        <h2 className='text-white text-8xl absolute bottom-1 left-8 font-serif animate-slide-up'>About</h2>
 </div>
 
 <div className='px-10 py-12'>

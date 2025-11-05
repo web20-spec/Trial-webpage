@@ -25,10 +25,10 @@ function Apply() {
           <input
           className='border-slate-300 border rounded-2xl pl-3 pt-0.5 pb-0.5 mb-1.5 w-full ' type="text" placeholder='Enter your email here' ></input>
 
-          <input className='border-gray-300 border rounded-2xl pl-3 pt-0.5 pb-0.5 mt-1.5 w-full ' type="text" placeholder='Enter your password here' ></input>
+          <input className='border-gray-300 border rounded-2xl pl-3 pt-0.5 pb-0.5 mt-1.5 w-full ' type="password" placeholder='Enter your password here' ></input>
         </div>
 
-        <div className='text-blue-600 font-semibold text-lg flex flex-row-reverse mt-2'>
+        <div className='text-blue-600 font-semibold text-lg flex flex-row-reverse mt-2 cursor-pointer'>
           Forgot Password?
         </div>
 
@@ -38,12 +38,12 @@ function Apply() {
         </div>
 
         <div className='mt-2'>
-          <button className='border-black border-2 bg-slate-950 text-white text-sm rounded-2xl w-full h-9 p-0.5'>Sign In</button>
+          <button className='border-black border-2 bg-slate-950 text-white text-sm rounded-2xl w-full h-9 p-0.5 cursor-pointer'>Sign In</button>
         </div>
 
         <div className='flex justify-items-start mt-3'>
           <p className='text-slate-500 text-lg font-medium'>You don't have an account?</p>
-          <p className='text-blue-600 font-semibold text-lg ml-1'>Sign Up</p>
+          <p className='text-blue-600 font-semibold text-lg ml-1 cursor-pointer'>Sign Up</p>
         </div>
 
       </div>

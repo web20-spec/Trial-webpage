@@ -1,7 +1,6 @@
 import React from 'react'
 import {Checkbox, Button} from '@mui/material'
 import EastIcon from '@mui/icons-material/East'
-// import {Link} from 'react-router-dom'
 
 function Home() {
 
