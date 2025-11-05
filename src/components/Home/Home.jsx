@@ -9,10 +9,10 @@ function Home() {
 return (
 <>
 <div
-    className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/10/Web-Banner-scaled.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover">
+    className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/10/Web-Banner-scaled.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover overflow-x-hidden">
     </div>
 
-<div className='bg-indigo-50'>
+<div className='bg-indigo-50 overflow-x-hidden'>
 <div className='p-8'>
     <h2 className='text-5xl font-serif'>Degree search</h2>
 </div>

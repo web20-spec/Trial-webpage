@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='bg-gray-700'>
+    <footer className='bg-gray-700 pb-6 overflow-x-hidden'>
     <div className='pt-20 flex justify-around'>
         <div className='block'>
         

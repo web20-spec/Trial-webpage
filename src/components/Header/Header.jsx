@@ -10,7 +10,7 @@ function Header() {
 
     useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 200;
+    const isScrolled = window.scrollY > 200;
     setScrolled(isScrolled);
     };
 
@@ -19,35 +19,66 @@ function Header() {
 }, []);
 
 return (
-    <div className={`flex gap-x-24 text-center fixed z-20 duration-700 w-full ${
-        scrolled ? "bg-blue-950 shadow-lg  " : "bg-transparent"}`}>
+    <div className={`flex gap-x-24 text-center fixed overflow-x-hidden z-20 duration-700 w-full ${
+        scrolled ? "bg-slate-950 shadow-lg  " : "bg-transparent"}`}>
 
-        <img className='h-18 pt-3 pl-3 ' src="https://www.accessed.pk/_next/image?url=%2FUniversities%2FUOL.png&w=640&q=75" alt="logo" />
+        <NavLink to='/' className='flex-shrink-0'>
+        <img className='h-[72px] w-auto pl-3 pt-3 cursor-pointer' src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/University_of_Lahore_%28logo%29.png/250px-University_of_Lahore_%28logo%29.png" alt="logo" />
+        </NavLink>
 
     <nav className='text-white ml-2'>
 
         <ul className='flex justify-evenly gap-12 my-10 text-lg cursor-pointer text-center w-full'>
-        <li className='hover:text-orange-500 duration-500'>Research </li>
-        <li className='hover:text-orange-500 duration-500'>News </li>
+
+        <NavLink to='/research'
+        className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
+        >
+            <li className='hover:text-orange-500 duration-500'>Research </li>
+        </NavLink>
+
+
+        <NavLink to='/news'
+        className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
+        >
+            <li className='hover:text-orange-500 duration-500'>News </li>
+        </NavLink>
+
+
         <NavLink to='/academics'
         className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
         ><li className='hover:text-orange-500 duration-500'>Academics </li></NavLink>
-        <li className='hover:text-orange-500 duration-500'>International </li>
-        <li className='hover:text-orange-500 duration-500'>Campus </li>
+
+
+        <NavLink to='/international'
+        className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
+        >
+            <li className='hover:text-orange-500 duration-500'>International </li>
+        </NavLink>
+
+        <NavLink to='/campus'
+        className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
+        >
+            <li className='hover:text-orange-500 duration-500'>Campus </li>
+            </NavLink>
+
+        
         <NavLink to='/admissions'
         className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
         ><li className='hover:text-orange-500 duration-500'>Admissions</li></NavLink>
 
+
         <NavLink to='/about'
         className={({isActive}) => `${isActive ? "text-orange-500 underline decoration-orange-500 underline-offset-6 font-semibold" : "text-white"} hover:text-orange-500 duration-500 hover:underline hover:decoration-orange-500 hover:underline-offset-6`}
-        ><li>About </li></NavLink>
+        ><li>About </li>
+        </NavLink>
+
         </ul>
     
 
     </nav>
 
 <div className="flex justify-end my-5 w-full items-center">
-<Link to='/Apply'><Button className='rounded-2xl text-center'
+<Link to='/apply'><Button className='rounded-2xl text-center'
 variant="contained"
 color='error'
 >Apply Now</Button>
