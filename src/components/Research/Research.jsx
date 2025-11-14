@@ -1,9 +1,21 @@
 import React from 'react'
+import Meta from '../Meta'
 
 function Research() {
+
 return (
 
     <>
+
+    <Meta title= 'Research- Research page'
+    description = "Welcome to My University. Explore our programs and campus."
+    canonical='http://localhost:5174/research'
+    robots = 'index, follow'
+    keywords="university, education, programs, research"
+
+    />
+
+
 <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/10/research-banner.webp')] h-[80vh] w-auto bg-no-repeat bg-fixed bg-cover bg-bottom bg-black/100 relative">
 
     <h2 className='text-white text-8xl absolute bottom-1 left-8 font-serif animate-slide-up'>Research</h2>

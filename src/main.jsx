@@ -16,6 +16,8 @@ import News from './components/News/News.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    
+
     <Route>
     <Route path='/' element={<Layout />}>
     <Route path='' element={<Home />} />
@@ -31,11 +33,12 @@ const router = createBrowserRouter(
     <Route path='apply' element={<Apply />} />
 
     </Route>
+
   )
 )
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </StrictMode>,
 )

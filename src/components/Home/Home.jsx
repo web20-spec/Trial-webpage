@@ -1,12 +1,21 @@
 import React from 'react'
 import {Checkbox, Button} from '@mui/material'
 import EastIcon from '@mui/icons-material/East'
+import Meta from '../Meta'
 
 function Home() {
 
 
 return (
 <>
+<Meta
+title = 'Home - Home page'
+description='One of the top ranked universities'
+canonical='http://localhost:5174/'
+robots = 'index, follow'
+keywords="university, education, programs, research"
+
+/>
 <div
     className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/10/Web-Banner-scaled.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover overflow-x-hidden">
     </div>
