@@ -12,6 +12,7 @@ import Research from './components/Research/Research.jsx'
 import International from './components/International/International.jsx'
 import Campus from './components/Campus/Campus.jsx'
 import News from './components/News/News.jsx'
+import Signup from './components/Signup.jsx'
 
 
 const router = createBrowserRouter(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
     </Route>
 
     <Route path='apply' element={<Apply />} />
+    <Route path='signup' element={<Signup />} />
 
     </Route>
 

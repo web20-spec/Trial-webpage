@@ -1,9 +1,19 @@
 import React from 'react'
 import { Checkbox, Button } from '@mui/material'
+import Meta from '../Meta'
 
 function International() {
 return (
 <>
+
+<Meta
+title = 'Internationally Recognized'
+description='One of the globallly recognized universities'
+canonical='http://localhost:5174/international'
+robots = 'index, follow'
+keywords="university, education, programs, research, international, students"
+
+/>
 
 
     <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/08/international-hero-img-scaled.webp')] h-[70vh] w-auto bg-no-repeat bg-fixed bg-cover bg-center relative">

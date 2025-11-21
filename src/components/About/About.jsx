@@ -1,9 +1,20 @@
 import React from 'react'
+import Meta from '../Meta'
 
 function About() {
 return (
     
     <>
+
+    <Meta
+title = 'About - About page'
+description='One of the top ranked universities'
+canonical='http://localhost:5174/about'
+robots = 'index, follow'
+keywords="university, education, programs, about, staff, faculties"
+
+/>
+
     <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/08/2U7A5019-scaled-1.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover bg-bottom bg-black/100 relative">
 
         <h2 className='text-white text-8xl absolute bottom-1 left-8 font-serif animate-slide-up'>About</h2>

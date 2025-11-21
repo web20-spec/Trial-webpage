@@ -1,8 +1,19 @@
 import { Checkbox } from '@mui/material'
 import React from 'react'
+import Meta from '../Meta'
+import { NavLink } from 'react-router-dom'
 
 function Apply() {
   return (
+<>
+    <Meta
+title = 'Apply - Login/Signup'
+description='Login to apply or signup to register'
+canonical='http://localhost:5174/apply'
+robots = 'index, follow'
+keywords="university, education, signup, programs, login"
+
+/>
     <div className="bg-[url('https://admissions.uol.edu.pk/static/media/uol-admissions-portal.19a2c5a892ead43a32dc.webp')] min-h-screen min-w-full bg-no-repeat bg-cover bg-fixed relative"
     >
 
@@ -43,12 +54,13 @@ function Apply() {
 
         <div className='flex justify-items-start mt-3'>
           <p className='text-slate-500 text-lg font-medium'>You don't have an account?</p>
-          <p className='text-blue-600 font-semibold text-lg ml-1 cursor-pointer'>Sign Up</p>
+          <NavLink to='/signup'><p className='text-blue-600 font-semibold text-lg ml-1 cursor-pointer hover:text-blue-900 hover:underline'>Sign Up</p></NavLink>
         </div>
 
       </div>
 
     </div>
+    </>
   )
 }
 

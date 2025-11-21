@@ -1,9 +1,20 @@
 import React from 'react'
 import EastIcon from '@mui/icons-material/East'
+import Meta from '../Meta'
 
 function Academics() {
   return (
     <>
+
+    <Meta
+title = 'Academics'
+description='Enhancing in every academic program'
+canonical='http://localhost:5174/academics'
+robots = 'index, follow'
+keywords="university, education, programs, academics"
+
+/>
+
     <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/10/acdemics-banner.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover bg-bottom bg-black/100 relative">
 
     <h2 className='text-white text-8xl absolute bottom-1 left-8 font-serif animate-slide-up'>Academics</h2>

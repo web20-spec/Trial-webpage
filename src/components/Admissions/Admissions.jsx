@@ -1,9 +1,20 @@
 import React from 'react'
 import {Button} from '@mui/material'
+import Meta from '../Meta'
 
 function Admissions() {
 return (
 <>
+
+<Meta
+title = 'Admissions'
+description='Over 10,000 admissions'
+canonical='http://localhost:5174/admissions'
+robots = 'index, follow'
+keywords="university, education, programs, admissions, students"
+
+/>
+
 <div className="bg-[url('https://uol.edu.pk/wp-content/uploads/2025/08/DJI_0044-copy-scaled-1.webp')] h-[88vh] bg-no-repeat bg-fixed bg-cover bg-bottom bg-black/100 relative">
 
         <h2 className='text-white text-8xl absolute bottom-1 left-8 font-serif animate-slide-up'>Admissions</h2>
