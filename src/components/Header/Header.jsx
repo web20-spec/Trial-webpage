@@ -22,7 +22,7 @@ return (
     <div className={`flex gap-x-24 text-center fixed overflow-x-hidden z-20 duration-700 w-full ${
         scrolled ? "bg-black/85 shadow-lg  " : "bg-transparent"}`}>
 
-        <NavLink to='/' className='flex-shrink-0'>
+        <NavLink to='/' className='shrink-0'>
         <img className='h-[72px] w-auto pl-3 pt-3 cursor-pointer' src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/University_of_Lahore_%28logo%29.png/250px-University_of_Lahore_%28logo%29.png" alt="logo" />
         </NavLink>
 
